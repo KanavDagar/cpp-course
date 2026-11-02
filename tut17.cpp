@@ -17,6 +17,7 @@ using namespace std;
 float moneyRecieved(int currentMoney, float factor=1.04){ // here factor is a default argument
     return currentMoney*factor;
 }
+// compulsary arguments should be passed first and then default arguments should be passed, otherwise it will give an error
 int main(){
     int a,b;
     cout<<"enter the value of a"<<endl;
@@ -34,5 +35,11 @@ int main(){
     cout<<"savings after one year of intrest = "<<moneyRecieved(money)<<endl;
 
     cout<<"if you are VIP, you will get  "<<moneyRecieved(money,1.1)<<" after one year"<<endl;//here 1.1 is passed as the value of factor, so the default value of factor is not used
+    
+    // constant arguments : if we don't want value of a variable to change, we use 'const' to make it constant
+    const int x = 5;
+    // x = 10; // This would cause an error since x is constant
+    cout << "The value of x is : " << x << endl;
+
     return 0;
 }
