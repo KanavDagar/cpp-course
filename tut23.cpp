@@ -1,4 +1,4 @@
-// object memory allocation and usinng arrays in classes -- c++
+// object memory allocation and using arrays in classes -- c++
 
 #include <iostream>
 using namespace std;
