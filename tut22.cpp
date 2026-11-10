@@ -14,7 +14,7 @@ using namespace std;
 class binary
 {
     // class members are private by default so we don't need to write private here
-    private:
+private:
     string s;
     void chk_bin(void); //--> so chk_bin can't be accessed by another user
 
@@ -45,15 +45,14 @@ void binary::chk_bin(void)
 
 void binary::compliment(void)
 {
-    chk_bin();
-    // we can use chk_bin here also instead of main so it always runs when we use compliment function
+
     for (int i = 0; i < s.length(); i++)
     {
         if (s.at(i) == '0')
         {
             s.at(i) = '1';
         }
-        else 
+        else
         {
             s.at(i) = '0';
         }
@@ -61,12 +60,15 @@ void binary::compliment(void)
 }
 
 void binary::display(void)
-{  cout <<"displaying your binary number ";
+{
+    chk_bin();
+    // we can use chk_bin here also instead of main so it always runs when we use compliment function
+    cout << "displaying your binary number ";
     for (int i = 0; i < s.length(); i++)
     {
-       cout<< s.at(i);
-       
-    }cout<<endl;
+        cout << s.at(i);
+    }
+    cout << endl;
 }
 
 int main()
