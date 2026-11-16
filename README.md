@@ -6,7 +6,7 @@ Tracking my daily progress in C++ and building foundational programming projects
 ### 1. Basic Command-Line Calculator (`calc.cpp`)
 * **Date:** Nov 2, 2026
 * **Description:** A lightweight arithmetic calculator that processes continuous user input to perform addition, subtraction, multiplication, and division. 
-* **Concepts Applied:** Floating-point math, modular functions, and `switch` statement control flow.
+* **Concepts Applied:** Floating-point math, modular functions, and `if else loop` statement control flow.
 
 ### 2. Console Tic-Tac-Toe (`tictactoe.cpp`)
 * **Date:** Nov 16, 2026
