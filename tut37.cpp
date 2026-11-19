@@ -18,7 +18,7 @@ public:
 
 /*
 ***************Derived class syntax ****************
-class {{derived class name}} : {{visibility mode ( either public or private)}} {{base class name}}
+class {{derived class name}} : {{visibility mode (public or private or protected)}} {{base class name}}
  {
 class members , methods etc
 };
