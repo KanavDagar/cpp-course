@@ -40,7 +40,7 @@ int main()
     for (i = 0; i < size; i++)
     {
         cout << "Item number " << i + 1 << endl;
-        ptrTemp->getData();
+        ptrTemp->getData(); //---> We created ptrTrmp to avoid error and garbage value since after 5 turns , ptr would get to a different memory and would give garbage value but ptrTemp would still stay until the second for loop
         ptrTemp++;
     }
 
